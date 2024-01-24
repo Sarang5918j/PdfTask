@@ -1,0 +1,41 @@
+[1] D. Yao, M. Wen, X. Liang, Z. Fu, K. Zhang, and B. Yang, “Energy
+theft detection with energy privacy preservation in the smart grid,”
+IEEE Internet of Things Journal, vol. 6, no. 5, pp. 7659-7669, Oct.
+2019
+[2] P. Jokar, N. Arianpoo, and V. C. M. Leung, “Electricity theft
+detection in AMI using customers consumption patterns,” IEEE
+Transactions on Smart Grid, vol. 7, no. 1, pp. 216-226, Jan. 2016
+[3] M. Nabil, M. Ismail, M. M. E. A. Mahmoud, W. Alasmary, and E
+Ser pedin, “PPETD: privacypreserving electricity theft detection
+scheme with load monitoring and billing for AMI networks,” IEEE
+Access, vol. 7, pp. 96 334-96 348, Jun. 2019
+[4] F. Pedregosa et al., “Scikit-learn: Machine learning in Python,”
+Journal of Machine Learning Research, vol. 12, pp. 2825- 830, Oct.
+2011
+[5] S. Salinas and P. Li, “Privacy-preserving energy theft detection in
+microgrids: A state estimation approach,” IEEE Transactions on
+Power Systems, vol. 31, no. 2, pp. 883-894, Mar. 2016.
+[6] D. Yao, M. Wen, X. Liang, Z. Fu, K. Zhang, and B. Yang, “Energy
+theft detection with energy privacy preservation in the smart grid,”
+IEEE Internet of Things Journal, vol. 6, no. 5, pp. 7659-7669, Oct.
+2019.
+[7] M. Nabil, M. Ismail, M. Mahmoud, M. Shahin, K. Qaraqe, and E.
+Ser pedin, “Deep recurrent electricity theft detection in AMI
+networks with random tuning of hyper-parameters,” in 24th
+International Conference on Pattern Recognition (ICPR), pp. 740-
+745, Aug. 2018
+[8] S. Salinas, M. Li, and P. Li, “Privacy-preserving energy theft
+detection in smart grids: A P2P computing approach,” IEEE Journal
+on Selected Areas in Communications, vol. 31, no. 9, pp. 257-267,
+Sep. 2013
+[9] V. C. Gungor, D. Sahin, T. Kocak, S. Ergut, C. Buccella, C. Cecati,
+and G. P. Hancke, “A survey on smart grid potential applications
+and communication requirements,” IEEE Transactions on Industrial
+Informatics, vol. 9, no. 1, pp. 28-42, Feb. 2013.
+International Journal of Engineering Research & Technology (IJERT)
+ISSN: 2278-0181
+Published by, www.ijert.org
+ICCIDT - 2022 Conference Proceedings
+Volume 10, Issue 04
+Special Issue - 2022
+104
