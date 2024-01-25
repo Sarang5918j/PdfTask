@@ -1,7 +1,3 @@
-PyPDF2
+requests
 pydocparser
-langchain_community
-amazon-textract-caller
-amazon-textract-textractor
-pypdf 
-Pillow
+BeautifulSoup4

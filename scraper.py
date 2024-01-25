@@ -48,7 +48,7 @@ def get_references(file_path):
 def get_abstract_from_paper_url(paper_page_url, headers):
     response = requests.get(paper_page_url, headers=headers)
     i = 1
-    while True:
+    while i<-50:
         print(f"making attempt {i} to get abstract")
         response = requests.get(paper_page_url, headers=headers)
         if response.status_code==200:
@@ -66,7 +66,8 @@ def get_abstract_from_paper_url(paper_page_url, headers):
         else:
             return "Abstract not found."
     else:
-        return f"Failed to retrieve paper page: {response.status_code}"
+        print(f"Failed to retrieve paper page: {response.status_code}")
+        return None
 
 
 # function to open paper link by name and returns the name, link and abstract of refrences found
@@ -77,10 +78,16 @@ def open_paper_link_by_name(paper_name):
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
     }
 
+    i = 1
+    while i<=50:
+        print(f"making attempt {i} to open paper link")
+        response = requests.get(search_url, headers=headers)
+        if response.status_code==200:
+            break
+        else:
+            i += 1
 
     # Make a request to the ResearchGate search page
-    response = requests.get(search_url, headers=headers)
-
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
 
@@ -108,30 +115,9 @@ def open_paper_link_by_name(paper_name):
 
 
             print(f"No exact match found for '{paper_name}' in the search results.")    
-            # return None, None, None
+         
         else:
             return f"No results found for '{paper_name}'."
     else:
-        return f"Failed to perform the search: {response.status_code}"
-
-#this is the main functions which calls all the other functions
-# def main(file_path):
-#     references = get_references(file_path)
-#     total_references = len(references)
-#     print(f"Found {total_references} references.")
-#     for num_references in range(total_references):
-#         reference = convert_to_plaintext(references[num_references])
-#         print(reference,"reference")
-#         result = open_paper_link_by_name(reference)
-#         if result:
-#             name, link, abstract = result[:3]
-#             print(f"Reference no: {num_references}, Name: {name}, ResearchGate link: {link}\
-#                 ,Abstract: {abstract}")
-#         else:
-#             continue
-#     print("--------------------- Job Done ---------------------")
-
-
-
-# if __name__ == "__main__":
-#     main("data_samples\electricity-theft-detection-using-machine-learning-IJERTCONV10IS04024.pdf")
+        print(f"Failed to perform the search: {response.status_code}")
+        return None
