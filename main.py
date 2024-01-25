@@ -1,9 +1,6 @@
 import database_integrator
 import scraper
 
-# Assuming you have a JSON file named 'output.json'
-json_filename = 'extracted_text/output.json'
-
 # Function to append information to the JSON file
 def make_data(input_paper):
     # Initialize an empty list to store references
@@ -37,8 +34,9 @@ def make_data(input_paper):
 # Example usage
 if __name__ == "__main__":
 
-    extracted_data = make_data(
-        'data_samples/electricity-theft-detection-using-machine-learning-IJERTCONV10IS04024.pdf'
-        )
-    
-    database_integrator.store_data(extracted_data)
+    # extracted_data = make_data(
+        # 'data_samples/electricity-theft-detection-using-machine-learning-IJERTCONV10IS04024.pdf'
+        # )
+
+    # database_integrator.store_data(extracted_data)
+    database_integrator.retrieve_and_save_csv()
