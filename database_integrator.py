@@ -2,7 +2,6 @@ from pymongo import MongoClient
 import csv
 
 
-
 def store_data(data_to_store):
 # Connect to MongoDB
     client = MongoClient('mongodb://localhost:27017')

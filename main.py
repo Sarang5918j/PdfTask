@@ -21,7 +21,7 @@ def save_uploaded_file(uploaded_file):
 def make_data(uploaded_file):
     try: 
         temp_file_path = save_uploaded_file(uploaded_file)
-    # Initialize an empty list to store references
+         # Initialize an empty dictionary to store references
         references_dict = {}
 
         references = scraper.get_references(temp_file_path)
@@ -50,13 +50,3 @@ def make_data(uploaded_file):
         return references_dict
     except Exception as es:
         return None
-
-# Example usage
-if __name__ == "__main__":
-
-    # extracted_data = make_data(
-        # 'data_samples/electricity-theft-detection-using-machine-learning-IJERTCONV10IS04024.pdf'
-        # )
-
-    # database_integrator.store_data(extracted_data)
-    database_integrator.retrieve_and_save_csv()

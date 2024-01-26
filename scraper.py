@@ -99,18 +99,14 @@ def open_paper_link_by_name(paper_name):
 
             for link in result_links:
                 result_name = link.get_text(strip=True)
-                # print("search: ",result_name)
 
                 result_name = convert_to_plaintext(result_name)
-                # print("plain_name:" ,result_name)
 
                 # Check if the result name matches the given paper name
                 if paper_name.lower() in result_name.lower():
                     paper_page_url = "https://www.researchgate.net/" + link['href']
                     abstract = get_abstract_from_paper_url(paper_page_url, headers=headers)
-                    # print("full link: ",paper_page_url)
-                    # print("abstact: ",abstract)
-
+                
                     return result_name, paper_page_url, abstract
 
 
