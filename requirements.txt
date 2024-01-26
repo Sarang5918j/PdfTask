@@ -1,3 +1,5 @@
 requests
 pydocparser
 BeautifulSoup4
+pymongo
+streamlit
